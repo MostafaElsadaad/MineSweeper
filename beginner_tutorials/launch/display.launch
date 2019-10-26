@@ -1,0 +1,6 @@
+<launch>
+  <param name="robot_description" textfile="///home/mostafa/catkin_ws/src/beginner_tutorials/urdf/tt.urdf" />
+    <!-- Start imu to tf publisher -->
+ <node pkg="nexus7_bringup" type="imu_to_tf.py" name="imu_to_tf" />
+
+</launch>

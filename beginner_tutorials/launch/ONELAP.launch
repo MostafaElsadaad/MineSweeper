@@ -1,0 +1,21 @@
+<launch>
+<arg name="gui" default="False" />
+<param name="robot_description" textfile="/home/mostafa/catkin_ws/src/beginner_tutorials/urdf/tt.urdf" />
+<param name="use_gui" value="$(arg gui)"/>
+<node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+<node name="joy_node" pkg="joy" type="joy_node" />
+<node name="motion" pkg="beginner_tutorials" type="motion" />
+
+
+
+<node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+
+<node name="odometry_publisher" pkg="odometry_publisher_tutorial" type="odometry_publisher"   />
+en
+
+<node name="rviz" pkg="rviz" type="rviz" args="/home/mostafa/catkin_ws/install/share/myrobot_description/myrobot.rviz" required="true" />
+
+
+<node name="basic_shapes" pkg="using_markers" type="basic_shapes"/> 
+
+</launch>

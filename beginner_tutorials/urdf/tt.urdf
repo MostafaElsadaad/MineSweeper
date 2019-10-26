@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<robot name="myfirst">
+
+	<link name="base_link">
+    <visual>
+      <origin rpy="0.0 0 0" xyz="0.0 0.0 0"/>
+      <geometry>
+        <mesh filename="file:///home/mostafa/catkin_ws/3natarX.dae"/>
+      </geometry>
+    </visual>
+  </link>
+  
+
+ 
+</robot>
